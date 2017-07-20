@@ -17,8 +17,8 @@ add_filter('wp_head','insert_jquery');
 
 
 // Register Custom Post Types
-add_action('init', 'register_custom_posts_init');
-function register_custom_posts_init() {
+add_action('init', 'register_custom_post_character');
+function register_custom_post_character() {
     // Register Products
     $character_labels = array(
         'name'               => 'Character',
